@@ -1,4 +1,5 @@
 import { ScoreComponent } from "./components/ScoreComponent"
+import { SelectorGame } from "./components/SelectorGame"
 import './App.css'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <main className='main'>
       <ScoreComponent/>
+      <SelectorGame/>
     </main>
   )
 }

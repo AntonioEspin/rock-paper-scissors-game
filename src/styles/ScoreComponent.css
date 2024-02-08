@@ -31,4 +31,5 @@
 .score > :last-child {
   font-size: 3rem;
   color: var(--Dark-Text);
+  font-weight: 800;
 }
