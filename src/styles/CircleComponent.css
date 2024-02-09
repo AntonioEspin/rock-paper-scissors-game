@@ -5,6 +5,7 @@
   width: 140px;
   height: 140px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .containerCircles>.backCircle:first-child {

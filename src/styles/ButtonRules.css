@@ -1,0 +1,19 @@
+.buttonRules {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonRules button {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  letter-spacing: 4px;
+}

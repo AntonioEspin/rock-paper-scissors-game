@@ -5,19 +5,8 @@
   background-image: url('../images/bg-triangle.svg');
   background-repeat: no-repeat;
   background-size: 313px 278px;
-  margin: 150px auto 0;
+  margin: 120px auto 50px;
 }
-
-/* .triangle {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-}
-
-.triangle img {
-  width: 65%;
-} */
 
 /* Container circles */
 .containerCircles {
