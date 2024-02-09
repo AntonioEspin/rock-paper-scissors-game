@@ -1,0 +1,8 @@
+.optionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 315px;
+  margin: 120px auto 50px;
+}
