@@ -4,5 +4,51 @@
   justify-content: space-between;
   width: 100%;
   max-width: 315px;
-  margin: 120px auto 50px;
+  margin: 80px auto 50px;
+}
+
+.user, .computer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user span, .computer span {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.results span {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.results button {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 12px 50px;
+  letter-spacing: 2px;
+  color: var(--Dark-Text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.results button:hover {
+  color: hsl(349, 71%, 52%);
 }

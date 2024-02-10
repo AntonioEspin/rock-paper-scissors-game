@@ -11,7 +11,6 @@ function App() {
   const [modal, setModal] = useState(false)
   const [userSelection, setUserSelection] = useState(null)
   const [computerSelection, setComputerSelection] = useState(null)
-
   const [gameStart, setGameStart] = useState(false)
 
   console.log(userSelection)
@@ -33,6 +32,8 @@ function App() {
           <OptionsSelected
             userSelection={userSelection}
             computerSelection={computerSelection}
+            gameStart={gameStart}
+            setGameStart={setGameStart}
           />
       }
       <ButtonRules

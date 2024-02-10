@@ -1,11 +1,19 @@
 /* eslint-disable react/prop-types */
 import { CircleComponent } from "./CircleComponent"
+import { gameLogic } from "../logic/gameLogic"
 import iconPaper from '../images/icon-paper.svg'
 import iconScissors from '../images/icon-scissors.svg'
 import iconRock from '../images/icon-rock.svg'
 import '../styles/OptionsSelected.css'
 
-export const OptionsSelected = ({userSelection, computerSelection}) => {
+export const OptionsSelected = ({userSelection, computerSelection, gameStart, setGameStart}) => {
+
+  const result = gameLogic(userSelection, computerSelection)
+
+  const handleResetGame = () => {
+    setGameStart(!gameStart)
+  }
+
   let userOption
   let computerOption
 
@@ -29,12 +37,17 @@ export const OptionsSelected = ({userSelection, computerSelection}) => {
     <section className="optionsContainer">
       <div className="user">
         {userOption}
+        <span>YOU PICKED</span>
       </div>
       <div className="computer">
         {computerOption}
+        <span>THE HOUSE PICKED</span>
       </div>
 
-      <div> Ganaste que bueno</div>
+      <div className="results">
+        <span>{result}</span>
+        <button onClick={handleResetGame}>PLAY AGAIN</button>
+      </div>
     </section>
   )
 }
