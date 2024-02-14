@@ -3,23 +3,24 @@ import { ScoreComponent } from "./components/ScoreComponent"
 import { SelectorGame } from "./components/SelectorGame"
 import { ButtonRules } from "./components/ButtonRules"
 import { ModalRules } from "./components/ModalRules"
-import './App.css'
 import { OptionsSelected } from "./components/OptionsSelected"
+import './App.css'
 
 function App() {
 
   const [modal, setModal] = useState(false)
   const [userSelection, setUserSelection] = useState(null)
   const [computerSelection, setComputerSelection] = useState(null)
+  const [turn, setTurn] = useState(0)
   const [gameStart, setGameStart] = useState(false)
-
-  console.log(userSelection)
-  console.log(computerSelection)
-  console.log(gameStart)
 
   return (
     <main className='main'>
-      <ScoreComponent/>
+      <ScoreComponent
+        userSelection={userSelection}
+        computerSelection={computerSelection}
+        turn={turn}
+      />
       {
         !gameStart ? 
           <SelectorGame
@@ -27,6 +28,7 @@ function App() {
             setComputerSelection={setComputerSelection}
             gameStart={gameStart}
             setGameStart={setGameStart}
+            setTurn={setTurn}
           />
         :
           <OptionsSelected

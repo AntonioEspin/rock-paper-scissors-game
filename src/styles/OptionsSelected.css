@@ -52,3 +52,24 @@
 .results button:hover {
   color: hsl(349, 71%, 52%);
 }
+
+@media (width > 900px) {
+  .optionsContainer {
+    max-width: 900px;
+    flex-wrap: nowrap;
+    margin-top: 250px;
+  }
+
+  .user {
+    order: 1;
+  }
+
+  .computer {
+    order: 3;
+  }
+
+  .results {
+    order: 2;
+    margin-top: 0;
+  }
+}

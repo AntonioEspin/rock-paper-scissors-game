@@ -17,3 +17,9 @@
   width: 100%;
   height: inherit;
 }
+
+@media (width > 900px) {
+  .selectorGame {
+    margin-top: 250px;
+  }
+}

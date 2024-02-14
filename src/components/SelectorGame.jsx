@@ -6,7 +6,7 @@ import iconScissors from '../images/icon-scissors.svg'
 import iconRock from '../images/icon-rock.svg'
 import '../styles/SelectorGame.css'
 
-export const SelectorGame = ({setUserSelection, setComputerSelection, gameStart, setGameStart}) => {
+export const SelectorGame = ({setUserSelection, setComputerSelection, gameStart, setGameStart, setTurn}) => {
 
     const handleSelection = (value) => {
       const optionsGame = ['paper', 'rock', 'scissors']
@@ -15,6 +15,7 @@ export const SelectorGame = ({setUserSelection, setComputerSelection, gameStart,
       setUserSelection(value)
       setComputerSelection(valueComputer)
       setGameStart(!gameStart)
+      setTurn(preValue => preValue + 1)
     }
 
   return (

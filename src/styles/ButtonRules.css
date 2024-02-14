@@ -17,3 +17,12 @@
   font-family: 'Barlow Semi Condensed', sans-serif;
   letter-spacing: 4px;
 }
+
+@media (width > 900px) {
+
+  .buttonRules {
+    height: inherit;
+    justify-content: end;
+    align-items: end;
+  }
+}
